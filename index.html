@@ -12,6 +12,9 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<meta itemprop="Description" content="Cumhuriyet Gazetesi’nin ‘CHP Parti Meclisi Üyesi Hakkı Süha Okay’ın, Nevşehir’in Gülşehir ilçesinde muhtarlarla yaptığı kahvaltılı toplantıya soruşturma açıldı’ haberine Nevşehir Cumhuriyet Başsavcılığı’ndan yalanlama geldi."/> 
+	<meta itemprop="dateModified" content="2017-03-28T16:33:14Z" /> 
+    <meta itemprop="datePublished" content="2017-03-28T16:29:34Z" /> 
 </head>
 <body id="top">
 
@@ -444,40 +447,51 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 			<script type="text/javascript" async=1>
-				;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+				
+				setTimeout(function () {
+
+					;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
 					p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
 					};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
 					n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","http://d1fc8wv8zag5ca.cloudfront.net/2.7.2/sp.js","snowFunc"));
-				
-				snowFunc("newTracker", "halilduygulucom", "d3rkrsqld9gmqf.cloudfront.net", {
-					appId: "halilduygulucom-web",
-					platform: "web",
-					respectDoNotTrack: false,
-					cookieName: "snowcookie_sp534_",
-					cookieLifetime: 86400 * 31,
-					cookieDomain: ".halilduygulu.com",
-					useCookies: true,
-					post: false,
-					discoverRootDomain: true,
-					forceSecureTracker: false,
-					contexts: {
-					    webPage: true,
-					    performanceTiming: false,
-					    gaCookies: true,
-					    geolocation: false
-					}
-				});
-				console.log(new Date());
-				snowFunc(function () {
-				  console.log("sp.js has loaded");
-				});
+			
+					//d3rkrsqld9gmqf.cloudfront.net
+					snowFunc("newTracker", "halilduygulucom", "34.250.92.175:8080", {
+						appId: "halilduygulucom",
+						platform: "web",
+						respectDoNotTrack: false,
+						cookieName: "snowcookie_hd_",
+						cookieLifetime: 86400 * 31,
+						cookieDomain: ".halilduygulu.com",
+						useCookies: true,
+						post: false,
+						discoverRootDomain: true,
+						forceSecureTracker: false,
+						contexts: {
+						    webPage: true,
+						    performanceTiming: true,
+						    gaCookies: true,
+						    geolocation: false
+						}
+					});
+
+					snowFunc("trackPageView", null /* custom header */, 
+						// The array of static contexts
+					  [{
+					    data: {
+					      description: document.head.querySelector("[itemprop=Description]").content,
+					      dateModified: document.head.querySelector("[itemprop=dateModified]").content,
+					      datePublished: document.head.querySelector("[itemprop=datePublished]").content
+					    }
+					  }]);
+
+					snowFunc('enableActivityTracking', 30, 10);
+				}, 0);
 
 			</script>
 
 			<script type="text/javascript">
-				//snowFunc("trackSelfDescribingEvent", {"schema": "iglu:com.acme/event/jsonschema/1-0-0", "data": {"type": "user_action"}}, [], {type: 'ttm', value: 1368725287000})
-				snowFunc("trackPageView");
-
+				//snowFunc("trackSelfDescribingEvent", {"schema": "iglu:com.acme/event/jsonschema/1-0-0", "data": {"type": "user_action"}}, [], {type: 'ttm', value: 1368725287000}) 
 			</script>
 
 		</body>
